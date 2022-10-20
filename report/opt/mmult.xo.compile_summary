@@ -1,0 +1,238 @@
+<ENTRY>
+{
+ "thisFile": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult.xo.compile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Wed Oct 19 15:49:07 2022",
+ "timestampMillis": "1666165747817",
+ "buildStep": {
+  "cmdId": "19ed8b53-2c60-4e1d-8b90-42c54218d798",
+  "name": "v++",
+  "logFile": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult/mmult.steps.log",
+  "commandLine": "/opt/Xilinx/Vitis/2022.1/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" --target hw_emu --compile -I../src --config mmult-compile.cfg -obuild/mmult.xo ../src/mmult.cpp ",
+  "args": [
+   "--target",
+   "hw_emu",
+   "--compile",
+   "-I../src",
+   "--config",
+   "mmult-compile.cfg",
+   "-obuild/mmult.xo",
+   "../src/mmult.cpp"
+  ],
+  "iniFiles": [
+   {
+    "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/mmult-compile.cfg",
+    "content": "platform=xilinx_u50_gen3x16_xdma_5_202210_1\nsave-temps=1\nkernel=mmult\ndebug=1\nmessageDb=build/mmult.mdb\ntemp_dir=build\nreport_dir=build/reports\nlog_dir=build/logs\n\n[advanced]\nmisc=solution_name=mmult"
+   }
+  ],
+  "cwd": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 19 15:49:07 2022",
+ "timestampMillis": "1666165747818",
+ "status": {
+  "cmdId": "19ed8b53-2c60-4e1d-8b90-42c54218d798",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Wed Oct 19 15:49:10 2022",
+ "timestampMillis": "1666165750786",
+ "buildSummary": {
+  "hardwarePlatform": "xilinx_u50_gen3x16_xdma_5_202210_1.xpfm",
+  "hardwareDsa": "",
+  "platformDirectory": "/opt/xilinx/platforms/xilinx_u50_gen3x16_xdma_5_202210_1",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW_EMU",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mmult",
+     "file": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/src/mmult.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2022.1. SW Build 3524075 on 2022-04-13-17:42:45"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Wed Oct 19 15:49:10 2022",
+ "timestampMillis": "1666165750791",
+ "buildStep": {
+  "cmdId": "01000f18-2753-4f25-ae4a-035e6af710df",
+  "name": "vitis_hls",
+  "logFile": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult/mmult/vitis_hls.log",
+  "commandLine": "vitis_hls -f /mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult/mmult/mmult.tcl -messageDb vitis_hls.pb",
+  "args": [
+   "vitis_hls",
+   "-f",
+   "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult/mmult/mmult.tcl",
+   "-messageDb",
+   "vitis_hls.pb"
+  ],
+  "iniFiles": [],
+  "cwd": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 19 15:49:10 2022",
+ "timestampMillis": "1666165750792",
+ "status": {
+  "cmdId": "01000f18-2753-4f25-ae4a-035e6af710df",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 19 15:49:53 2022",
+ "timestampMillis": "1666165793717",
+ "status": {
+  "cmdId": "01000f18-2753-4f25-ae4a-035e6af710df",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794039",
+ "report": {
+  "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult/mmult/mmult/solution/.autopilot/db/mmult.design.xml",
+  "name": "mmult",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_REPORT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794039",
+ "report": {
+  "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult/mmult/mmult/solution/.autopilot/db/.message_syn.xml",
+  "name": "mmult",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_DRC_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794046",
+ "report": {
+  "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/reports/mmult/hls_reports/mmult_csynth.rpt",
+  "name": "mmult",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794046",
+ "report": {
+  "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/mmult/mmult/mmult/solution/syn/report/mmult_csynth.xml",
+  "name": "mmult",
+  "fileType": "XML",
+  "reportType": "KERNEL_HLS_CSYNTH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794059",
+ "report": {
+  "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/build/reports/mmult/system_estimate_mmult.xtxt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SYSTEM_ESTIMATE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794428",
+ "report": {
+  "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794428",
+ "report": {
+  "path": "/mnt/HLSNAS/03.RJWQGv/labB_yocheng/systolic_array/systolic_array_kernels/Emulation-HW/guidance.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Wed Oct 19 15:49:54 2022",
+ "timestampMillis": "1666165794432",
+ "status": {
+  "cmdId": "19ed8b53-2c60-4e1d-8b90-42c54218d798",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
